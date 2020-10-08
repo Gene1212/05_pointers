@@ -3,7 +3,7 @@
 
 int main() 
 {
-
+	//#1
 	int x = 5;
 	char y = 90;
 	long z = 921312321;
@@ -12,6 +12,7 @@ int main()
 	char*yp = &y;
 	long*zp = &z;
 	
+	//#2-4
 	printf("Original Values\n");
 	printf("X: %u\n",x);
 	printf("Y: %u\n",y);
@@ -34,6 +35,7 @@ int main()
 	printf("Y: %u\n", yp);
 	printf("Z: %u\n", zp);
 
+	//#5
 	*xp=5213;
 	*yp=22;
 	*zp=213123123;
@@ -42,15 +44,17 @@ int main()
 	printf("Y: %u\n",y);
 	printf("Z: %u\n",z);
 
+	//#6
 	unsigned int f =  85;
 	int*fp = &f;
 	char*ffp = &f;
 
+	//#7
 	printf("\n");
 	printf("fp: %p fp points to: %u\n", fp, *fp);
 	printf("ffp: %p ffp points to: %u\n", ffp, *ffp);
 	
-	
+	//#8
 	printf("Unsigned integer f: %u\n", f);
 	printf("Hex integer f: %x\n", f);
 	
